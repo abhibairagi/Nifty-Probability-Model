@@ -1,0 +1,15 @@
+# secrets — never commit (also covered in backend/.gitignore)
+.env
+**/.env
+backend/data/secrets/
+
+# generated market data (snapshots, reports, order flow, instruments) — rebuilt from the feeds
+backend/data/
+
+# dependencies / builds
+node_modules/
+frontend/.next/
+
+# OS / editor
+.DS_Store
+*.tmp

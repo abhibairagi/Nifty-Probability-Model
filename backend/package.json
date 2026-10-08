@@ -1,0 +1,14 @@
+{
+  "name": "nifty-expiry-probability-model",
+  "version": "0.1.0",
+  "description": "Rule-based NIFTY expiry-day probability engine: OI seller positioning, directional bias, strike OTM probability",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env app.js",
+    "mock": "PROVIDER=mock FORCE_MARKET_OPEN=1 node --env-file-if-exists=.env app.js",
+    "simulate": "node scripts/simulate.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=22" }
+}
